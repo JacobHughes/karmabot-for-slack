@@ -168,11 +168,25 @@ module.exports = (robot) ->
 
   # Error message list
   errMessage = ["*ERROR: YOU MUST CONSTRUCT ADDITIONAL PYLONS*"]
-
+  
+  # Admin Test
+  robot.respond /admin test/i, (msg) ->
+        res = ""
+        admin_name = process.env.HUBOT_KARMA_ADMIN_NAME
+        # Check who's requesting the karma clear...
+        if (msg.message.user.name == "jacob")
+            #...if the usernames match, continue
+            res+= "You have the power!"
+        else
+            #...if they dont, display an error message
+            res += msg.random errMessage
+        msg.send res  
+  
   # This command will clear the karma score as long as you are the correct user
   # If you aren't the right user, it will display an error message
   robot.respond /clear karma/i, (msg)  ->
         res = ""
+        admin_name = process.env.HUBOT_KARMA_ADMIN_NAME
         # Check who's requesting the karma clear...
         if (msg.message.user.name == "jacob")
             #...if the usernames match, continue
