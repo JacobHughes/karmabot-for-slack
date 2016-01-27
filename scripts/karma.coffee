@@ -174,7 +174,7 @@ module.exports = (robot) ->
         res = ""
         admin_name = process.env.HUBOT_KARMA_ADMIN_NAME
         # Check who's requesting the karma clear...
-        if (msg.message.user.name == "jacob")
+        if (msg.message.user.name == admin_name)
             #...if the usernames match, continue
             res+= "You have the power!"
         else
@@ -188,7 +188,7 @@ module.exports = (robot) ->
         res = ""
         admin_name = process.env.HUBOT_KARMA_ADMIN_NAME
         # Check who's requesting the karma clear...
-        if (msg.message.user.name == "jacob")
+        if (msg.message.user.name == admin_name)
             #...if the usernames match, continue
             users = robot.brain.data._private
             for username of users
