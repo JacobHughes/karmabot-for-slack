@@ -22,11 +22,11 @@ You will need to set the token `HUBOT_KARMA_ADMIN_NAME` to allow someone to clea
 
 To give a user clever points, simply send a message containing `@user++`. This will apply 1 clever point.
 
-![](images/addCleverPoints.png)
+![](images/addCleverPoints.PNG)
 
 To give a user stupid points, simply send a message containing `@user--`. This will apply 1 stupid point.
 
-![](images/addStupidPoints.png)
+![](images/addStupidPoints.PNG)
 
 After points are added, your bot will respond with a message with `@user`'s total stupid or clever points.
 
@@ -34,7 +34,7 @@ After points are added, your bot will respond with a message with `@user`'s tota
 
 To see the current leaderboard for aggregate score (clever points - stupid points), send a message to your bot with the word `leaderboard`.
 
-![](images/leaderboard.png)
+![](images/leaderboard.PNG)
 
 ### Clearing assigned points
 
