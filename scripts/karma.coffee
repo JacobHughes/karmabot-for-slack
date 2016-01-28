@@ -156,7 +156,7 @@ module.exports = (robot) ->
         
         # Create the message strings for this user
         leader = if i == 0 then "All hail supreme leader!" else ""
-        newline = if i < Math.min(limit, tuples.length) - 1 then '\n' else ''
+        newline = if i < tuples.length - 1 then '\n' else ''
         str += "##{i+1} @#{username} [#{points} " + point_label + "] " + "(#{s_points} stupid #{s_point_label} and #{c_points}" + " clever #{c_point_label}) " + leader + newline
 
      # Send the message
