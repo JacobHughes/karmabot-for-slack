@@ -135,10 +135,10 @@ module.exports = (robot) ->
      str = ''
      
      # The limit to who is included in the leaderboard
-     limit = 5
+     #limit = 5
      
-     # For each user in the tuples or 5 (whichever is less)
-     for i in [0...Math.min(limit, tuples.length)]
+     # For each user in the tuples
+     for i in [0...tuples.length]
         # Get the username and score
         username = tuples[i][0]
         points = tuples[i][1]
