@@ -4,6 +4,8 @@ karmabot-for-slack is a script for a chat bot built on the [Hubot][hubot] framew
 
 This script keeps track of users' positive and negative karma (clever points and stupid points) as well as an agregate score. Any users can give another user stupid or clever points, but cannot give themselves clever points.
 
+I originally started with [Donohue's karma bot](https://github.com/Donohue/karmabot), but expanded it to my own requirements.
+
 [heroku]: http://www.heroku.com
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
