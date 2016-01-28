@@ -14,7 +14,7 @@ To get this script running you should only need to copy the file `karma.coffee` 
 
 You will need to set the token `HUBOT_KARMA_ADMIN_NAME` to allow someone to clear the points. For example, my Slack username is `@jacob`. Therefore I would set the token to be `jacob`, ommiting the `@`:
 
-```heroku add: HUBOT_KARMA_ADMIN_NAME='jacob'```
+```heroku config:add HUBOT_KARMA_ADMIN_NAME='jacob'```
 
 ## Useage
 
